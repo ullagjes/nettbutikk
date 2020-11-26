@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Dec-o-dent</title>
+    <link rel="stylesheet" href="./styles/klasser.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <script src="./scripts/index.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <section id="intro">
+            <h1>Decade of decadence</h1>
+            <img src="./images/background.jpg" alt="">
+        </section>
+        <nav>
+        <div id="minNavigasjon">
+            <a class="navigasjonLenke alleVarer" href="#">Alle varer</a>
+            <a class="navigasjonLenke lamper" href="#">Lamper</a>
+            <a class="navigasjonLenke bord" href="#">Bord</a>
+            <a class="navigasjonLenke stoler" href="#">Stoler</a>
+            <a class="navigasjonLenke inspirasjonGalleri" href="#">Bli inspirert</a>
+            <!--SØKEFELT OG HANDLEKURV-->
+            <!--<div id="searchAndBuy">-->
+                <label for="searchField">Søk</label>
+                <input id="searchField" type="text" placeholder="Søk etter varer her">
+                <p id="pMainPageSum">Sum: <span id="desktopSum">0</span></p>
+                <button id="handlekurvBtn" tabindex="0">
+                    <img id="minHandlekurvLogo" src="./images/shopping-cart-icon-2.png" alt="Handlekurv-ikon med lenke som fører videre til en oversikt over varene som er lagt i handlekurven.">
+                </button>
+            <!--</div>-->
+            <!--HANDLEKURV-->
+            <div id="handlekurvGrid">
+                <h2 id="minHandlekurv">Handlekurv</h2> 
+                <div id="handlekurv"><p>Du har ingen varer i handlekurven.</p>
+                </div>
+                <div class="handlekurvSum">
+                    <span class="minSum">Total sum:</span>
+                    <span class="sumHer">0</span>
+                </div>
+            </div> 
+        </div>
+        <!--INSPIRASJON POPUP-->
+        <div id="inspirasjon"></div>
+    </nav></header>
+    <!--NAVIGASJON-->
+    
+    <main>
+        <!--OVERLAY LEGGER SEG OVER HELE NÅR HANDLEKURVEN VISES-->
+        <div id="overlay"></div>
+        <!--MINE-VARER-SECTION FYLLES OPP MED HTML OG CSS VIA JAVASCRIPT-->
+        <section id="mine-varer"></section>
+    </main>
+
+    <footer>
+    </footer>
+    
+</body>
+</html>

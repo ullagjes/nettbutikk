@@ -1,0 +1,428 @@
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poiret One', cursive;
+    font-weight: 700;
+}
+
+/*LOGO OG BAKGRUNNSMØNSTER TOPP */
+
+header {
+    width: 100%;
+}
+
+#intro {
+    height: 35vh;
+    position: relative;
+}
+
+#intro h1 {
+    position: absolute;
+    padding: .1em;
+    top: .5em;
+    left: 1.3em;
+    font-size: 5.5rem;
+    font-family: 'Limelight', cursive;
+    color:#e5df88;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#intro img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*NAVIGASJON*/ 
+
+nav {
+    padding-bottom: 1.3em;
+    width: 100%;
+    position: relative;
+}
+
+#minNavigasjon {
+    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: #e5df88;
+}
+
+.navigasjonLenke {
+    color: #4C4C4C;
+    font-size: 2.5rem;
+    margin: 0 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navigasjonLenke:hover {
+    color: #A37EBA;
+}
+
+label {
+    font-family: 'Poiret One', cursive;
+    font-size: 2.5rem;
+    color: #4C4C4C;
+    margin: 0 .5em;
+}
+
+/*NAVIGASJON: SØK, HANDLEKURV OG TOTALSUM*/
+
+#searchAndBuy {
+    display: flex;
+    align-items: baseline;
+}
+
+#searchField {
+    width: 15em;
+    height: 2.5em;
+    font-family: 'Poiret One', cursive;
+    font-size: 2rem;
+}
+
+#minHandlekurvLogo {
+    width: 100%;
+    padding: .3em;
+    border: none;
+    cursor: pointer;
+}
+
+#handlekurvBtn {
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    position: relative;
+    top: .6em;
+    margin-left: .3em;
+    margin-right: 4.2em;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#pMainPageSum {
+    margin-left: .5em;
+    font-size: 1.5rem;
+}
+
+#kryss {
+    font-weight: 800;
+}
+
+/*OVERLAY*/
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+/*AKTIVE LENKER*/
+
+.active {
+    background-color: #A37EBA;
+    color: white;
+    padding: .1em;
+}
+
+.active:hover {
+    color: #e5df88;
+}
+/*BILDEGALLERI/INSPIRASJON*/ 
+
+#inspirasjon {
+    width: 100%;
+    transition: .5s;
+}
+
+#inspirasjon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+#kryssUt {
+    padding: 0 .3em;
+}
+
+/*VARER - GRIDSYSTEM*/
+
+#mine-varer {
+    width: 90vw;
+    min-width: 300px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+}
+
+/*VARENE*/
+
+.varenavn {
+    color: #4c4c4c;
+    font-size: 2.5rem;
+}
+
+.vare {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: .7em;
+    box-shadow: 2px 2px 5px 0px rgba(135,135,135,0.43);
+}
+
+.vare img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.priceAndBuy {
+    margin-top: .5em;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.pris {
+    color: #4C4C4C;
+    font-size: 2rem;
+    padding-bottom: .5em;
+}
+
+.buyBtn {
+    margin-top: auto;
+    background-color: #e5df88; 
+    border: none;
+    padding: .5em;
+    width: 100%;
+    text-align: center;
+    justify-self: flex-end;
+    align-self: center;
+    color: #4C5E5C;
+    font-size: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+    font-family: 'Poiret One', cursive;
+}
+
+.buyBtn:hover {
+    color: white;
+    background-color:#A37EBA;
+}
+
+/*HANDLEKURV*/
+
+#handlekurvGrid {
+    background-color: #e5df88;
+    width: 30vw;
+    padding-bottom: 1em;
+    position: absolute;
+    top: -300vh;
+    transition: .3s;
+    z-index: 2;
+}
+
+#minHandlekurv {
+    text-align: center;
+    color: #4C4C4C;
+    padding: .5em;
+    font-size: 2.5rem;
+}
+
+#handlekurv p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.handlekurvElement {
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px dotted black;
+    margin: 0 2em;
+}
+
+.handlekurvElement img {
+    width: 15%;
+}
+
+.handlekurvKvantitet {
+    width: 35px;
+    height: 25px;
+}
+
+.fjernFraHandlekurv {
+    width: 12%;
+    height: 2%;
+    background-color: #a37eba;
+    border: none;
+    padding: .5em;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.handlekurvPris {
+    font-size: 2rem;
+    color: #4c4c4c; 
+}
+
+.handlekurvProdukt {
+    font-size: 2rem;
+    color: #4c4c4c;
+}
+
+.handlekurvSum {
+    display: flex;
+    padding: 1em;
+    margin: 0 2em;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #4c4c4c;
+    border-bottom: 1px dotted black;
+}
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color:#e5df88;
+}
+
+/*RESPONSIVITIET*/
+
+@media (min-width: 500px) {
+    
+    #intro img {
+        min-width: 576px;
+
+    }
+
+    #intro h1 {
+        font-size: 4.5rem;
+        width: 55%;
+    }
+
+    #minNavigasjon {
+        min-width: 360px;
+    }
+
+    #minNavigasjon a {
+        display: none;
+    }
+
+    /*#mine-varer {
+        min-width: 450px;
+        margin: 0 auto;
+    }*/
+}
+
+@media (min-width: 768px) {
+    header {
+        width: 100%;
+        min-width: 768px;
+    }
+
+    #intro img {
+        min-width: 768px;
+
+    }
+
+    #intro h1 {
+        font-size: 6rem;
+        width: 55%;
+    }
+
+    #minNavigasjon {
+        min-width: 360px;
+    }
+
+    #minNavigasjon a {
+        display: none;
+    }
+
+    /*#mine-varer {
+        min-width: 650px;
+        margin: 1em;
+    }*/
+}
+@media (min-width: 992px) {
+    header {
+        
+        min-width: 992px;
+    }
+
+    #intro img {
+        min-width: 992px;
+
+    }
+
+    #intro h1 {
+        font-size: 6rem;
+        width: 55%;
+    }
+
+    #minNavigasjon {
+        min-width: 992px;
+    }
+
+    #minNavigasjon a {
+        display: inline-block;
+        font-size: 2rem;
+        margin: .5em;
+    }
+
+    #searchField {
+        width: 10em;
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 2rem;
+    }
+
+    /*#mine-varer {
+        min-width: 850px;
+    }*/
+
+}
+
+
+@media (min-width: 1200px) {
+    header {
+        width: 100%;
+    }
+
+    #intro h1 {
+        top: 2em;
+    }
+
+    #intro img {
+        width: 100%;
+
+    }
+    #minNavigasjon {
+        width: 100%;
+    }
+
+    #minNavigasjon a {
+        font-size: 2.5rem;
+    }
+
+}
