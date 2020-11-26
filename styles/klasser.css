@@ -374,8 +374,8 @@ footer {
     }
 
     #intro h1 {
-        font-size: 6rem;
         width: 55%;
+        top: .5em;
     }
 
     #minNavigasjon {
@@ -409,9 +409,6 @@ footer {
         width: 100%;
     }
 
-    #intro h1 {
-        top: 2em;
-    }
 
     #intro img {
         width: 100%;
