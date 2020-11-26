@@ -327,10 +327,6 @@ footer {
         display: none;
     }
 
-    /*#mine-varer {
-        min-width: 450px;
-        margin: 0 auto;
-    }*/
 }
 
 @media (min-width: 768px) {
@@ -357,10 +353,6 @@ footer {
         display: none;
     }
 
-    /*#mine-varer {
-        min-width: 650px;
-        margin: 1em;
-    }*/
 }
 @media (min-width: 992px) {
     header {
@@ -396,10 +388,6 @@ footer {
     label {
         font-size: 2rem;
     }
-
-    /*#mine-varer {
-        min-width: 850px;
-    }*/
 
 }
 
