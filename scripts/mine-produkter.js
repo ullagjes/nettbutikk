@@ -56,28 +56,28 @@ export let mineProdukter = [
         pris: 1199
     },
     {
-        bilde: "./images/table/table-1.jpg",
+        bilde: "./images/tables/table-1.jpg",
         alt: "bilde av enkelt lite bord med plass til to stoler",
         produkt: "Coffee table",
         id: "Bord",
         pris: 6999
     },
     {
-        bilde: "./images/table/table-2.jpg",
+        bilde: "./images/tables/table-2.jpg",
         alt: "bilde av stor kontorpult med blank overflate",
         produkt: "The Mad Man desk",
         id: "Bord",
         pris: 2599
     },
     {
-        bilde: "./images/table/table-3.jpg",
+        bilde: "./images/tables/table-3.jpg",
         alt: "bilde av enkelt rundt bord i hvitt",
         produkt: "The solo",
         id: "Bord",
         pris: 1299
     },
     {
-        bilde: "./images/table/table-4.jpg",
+        bilde: "./images/tables/table-4.jpg",
         alt: "bilde av to lave sofa-bord med mørke runde overflater",
         produkt: "Lounge table",
         id: "Bord",
